@@ -7,9 +7,9 @@ const Thread = require("./models/Thread");
 app.use(express.json());
 
 mongoose
-  .connect(
-    "mongodb+srv://nagatomo:bokeno0810@cluster0.9eyyiv3.mongodb.net/threads?retryWrites=true&w=majority"
-  )
+  .connect
+  // 自分のMONGODBのDASHBOARD URLを貼り付け
+  ()
   .then(() => console.log("DB connected"))
   .catch((err) => console.log(err));
 
